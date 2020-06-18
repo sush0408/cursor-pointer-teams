@@ -1,5 +1,7 @@
 #!/bin/bash
 echo "This scripts Creates a pointer which follows you mouse"
+echo "./custom-pointer.sh start  - to start cursor pointer"
+echo "./custom-pointer.sh stop  - to stop cursor pointer"
 
 start_pointer() {
     docker run --rm --detach --name=cursor-pointer \
@@ -28,6 +30,8 @@ then
     elif [ $1 == "stop" ]; 
     then
         stop_pointer
+    else
+        start_pointer
     fi
 else
     echo "Docker Deamon Not Running"

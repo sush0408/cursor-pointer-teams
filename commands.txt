@@ -1,0 +1,3 @@
+wget -O custom-pointer.sh https://raw.githubusercontent.com/sush0408/cursor-pointer-teams/master/custom-pointer.sh
+chmod +x custom-pointer.sh
+./custom-pointer.sh start
